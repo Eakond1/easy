@@ -4,7 +4,7 @@ using namespace std;
 int itc_revnbr(int num) {
     int reversed = 0;
     int remainder;
-    while (num > 0) {
+    while (num != 0) {
         remainder = num % 10;
         reversed = reversed * 10 + remainder;
         num /= 10;
