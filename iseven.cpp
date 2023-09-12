@@ -4,10 +4,10 @@
 using namespace std;
 bool itc_iseven(int num){
 if (num%2==0){
-    return "TRUE";
+    return true;
 }
 
 else
-    return "FALSE";
+    return false;
 
 }
