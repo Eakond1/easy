@@ -3,15 +3,18 @@
 
 using namespace std;
 int itc_sqrt(int num){
-    if (num<0)
+    if (num<0){
         return -1;
-int c=0;
-
-while (c*c<=num){
-    if (c*c==num){
-    return c;
+    }
+    else if (num==0){
+        return 0;
+    }
+  int i = 0, x = 1;
+  while (i != x){
+  i = num / x;
+  if (i == x){
+        return x;
+  }
+  x++;
 }
-    c=c+1;
-}
-return -1;
 }
