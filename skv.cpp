@@ -27,7 +27,7 @@ double p;
 double pr=a+b+c;
 p=pr/2;
 double S;
-S= sqrt(p*(p-a)*(p-b)*(p-c));
+S= itc_sqrt(p*(p-a)*(p-b)*(p-c));
 
 return S;
 }
