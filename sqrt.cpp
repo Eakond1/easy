@@ -17,4 +17,5 @@ int itc_sqrt(int num){
   }
   x++;
 }
+return x;
 }
