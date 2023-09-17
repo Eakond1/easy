@@ -3,14 +3,26 @@
 #include <cmath>
 using namespace std;
 double itc_pow(int num, int step){
-    int a=1;
-if (step<0){
-    return -1;
-}
- for (int i = 0; i < abs(step); i++){
-    a=a*num;
- }
-return a;
+    double a = num;
+    if (step==0){
+    return 1;
+    }
+    else if (step>0){
+        for (int i=1; i < step; i++){
+        a=a*num;
+        }
+    return a;
+    }
+
+    if (step==0){
+    return 0;
+    }
+    else {
+        for(int i=-1; i>step; i--){
+        a=a*num;
+        }
+        return 1/a;
+    }
 }
  bool itc_ispositive(int num){
      if (num>=0){
