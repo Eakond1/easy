@@ -26,10 +26,7 @@ if (a <= 0 || b <= 0 || c <= 0 || a + b <= c || a + c <= b || b + c <= a ) {
 double p;
 double pr=a+b+c;
 p=pr/2;
-double S;
-S= itc_sqrt(p*(p-a)*(p-b)*(p-c));
-
-return S;
+return itc_sqrt(p*(p-a)*(p-b)*(p-c));
 }
 double itc_scir(int radius){
 if(radius<=0){
